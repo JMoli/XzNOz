@@ -36,7 +36,7 @@ app.controller('GameCtrl', function ($scope) {
 	$scope.create = function create(){
 		$scope.line = new Phase.Line();
 		$scope.map = $scope.game.add.tilemap('map');
-		$scope.map.addTilesetImage('ground_1x1);
+		$scope.map.addTilesetImage('ground_1x1');
 		$scope.layer = $scope.map.createLayer('Tile Layer 1');
 		$scope.layer.resizeWorld();
 		$scope.map.setCollisionBetween(1, 12);
